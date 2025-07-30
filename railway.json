@@ -1,14 +1,8 @@
 {
-  "services": {
-    "backend": {
-      "build": {
-        "command": "npm install",
-        "cwd": "backend"
-      },
-      "start": {
-        "command": "node server.js",
-        "cwd": "backend"
-      }
-    }
+  "build": {
+    "command": "cd backend && npm install"
+  },
+  "start": {
+    "command": "cd backend && node server.js"
   }
 }
