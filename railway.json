@@ -1,4 +1,14 @@
 {
-  "build": "cd backend && npm install",
-  "start": "cd backend && node server.js"
+  "services": {
+    "backend": {
+      "build": {
+        "command": "npm install",
+        "cwd": "backend"
+      },
+      "start": {
+        "command": "node server.js",
+        "cwd": "backend"
+      }
+    }
+  }
 }
